@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo > img {
+    width: 100px;
+    height: 120px;
+}
+
+.ul-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-links > li {
+    list-style-type: none;
+    margin-left: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ul-links > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.auth-buttons > button {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #38a2ff;
+    border: none;
+}
+
+.page1 {
+    background-image: url("../assets/images/hotel.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 1600px 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking {
+    color: #2d7af7;
+}
+
+.search-bar > form {
+    width: 200px;
+    /* CONTINUE */
+}
