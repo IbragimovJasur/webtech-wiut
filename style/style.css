@@ -54,3 +54,54 @@
     width: 200px;
     /* CONTINUE */
 }
+
+/* PAGE 2 */
+
+.page2 {
+    height: 750px;
+}
+
+.page2-texts {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.page2-images {
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page2-images > img {
+    width: 350px;
+    height: 300px;
+}
+
+/* PAGE 3 */
+
+.page3 {
+    height: 750px;
+}
+
+.page3-images1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page3-images2 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.page3-images1 > img {
+    width: 440px;
+    height: 300px;
+}
+
+.page3-images2 > img {
+    width: 440px;
+    height: 300px;
+}
