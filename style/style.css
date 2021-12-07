@@ -114,11 +114,35 @@ body {
 
 .page2-text {
     height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+
+}
+
+.page2-images {
+    margin: 0 auto;
+    width: 95%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .page2-images > img {
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
+}
+
+.page2-images-text {
+    margin: 0 auto;
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
 /* PAGE 3 */
