@@ -5,60 +5,50 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <section class="nav-bar">
-        <div class="logo">
-            <img src="assets/logos/hotel_logo.jpg" alt="">
-        </div>
-
-        <div class="links">
-            <ul class="ul-links">
-                <li><a href="#">Hotels & Homes</a></li>
-                <li><a href="#">Most Populars</a></li>
-                <li><a href="#">Top Destinations</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-
-        <div class="auth-buttons">
-            <button class="register" type="button">Register</button>
-            <button class="signin" type="button">Sign in</button>
-        </div>
-
-    </section>
-
     <section class="page1">
-        <div class="parts">
-            <div class="text">
-                <h1 class="booking">Book your accommodation in advance</h1>
-                <p>This website was created to fulfill Web Technology module’s
-                    requirements and does not represent an actual company or service</p>
+        <nav class="nav-bar">
+            <div class="links">
+                <ul class="ul-links">
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Homes</a></li>
+                    <li><a href="#">Most Populars</a></li>
+                    <li><a href="#">Top Destinations</a></li>
+                    <li><a href="#">Reserve</a></li>
+                </ul>
+            </div>
+    
+            <div class="auth-buttons">
+                <button class="register" type="button">Sign Up</button>
+                <button class="signin" type="button">Sign in</button>
+            </div>
+        </nav>
+
+        <div class="page1-parts">
+            <div class="page1-text">
+                <h1 class="booking-text">Book your accommodation in advance</h1>
             </div>
 
-            <div class="search-bar">
-                <form action="" method="get" class="form">
-                    <input type="search" placeholder="Where are you going?">
-                    <input type="date" placeholder="arrive in -- leave in">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
+            <form action="" method="get" class="page1-form">
+                <input type="search" placeholder="Where are you going?" class="place">
+                <input type="date" placeholder="arrive in -- leave in" class="date">
+                <button type="submit" class="search">Search</button>
+            </form>
         </div>
 
+        <div class="note">
+            <p>This website was created to fulfill Web Technology module’s requirements and does not represent an actual company or service</p>
+        </div>
     </section>
 
     <section class="page2">
-        <div class="page2-parts">
-            <div class="page2-text">
-                <h1>Most Populars</h1>
-                <h1 class="feel">FEEL LIKE HOME</h1>
-            </div>
+        <div class="page2-text">
+            <h1 class="feel">FEEL LIKE HOME</h1>
+        </div>
 
-            <div class="page2-images">
-                <img src="assets/images/popular1.jpg" alt="">
-                <img src="assets/images/popular2.jpg" alt="">
-                <img src="assets/images/popular3.jpeg" alt="">
-                <img src="assets/images/popular4.jpg" alt="">
-            </div>
+        <div class="page2-images">
+            <img src="assets/images/popular2.jpg" alt="" class="popular2">
+            <img src="assets/images/popular3.jpeg" alt="" class="popular3">
+            <img src="assets/images/popular4.jpg" alt="" class="popular4">
         </div>
 
     </section>
@@ -82,6 +72,57 @@
                 <img src="assets/images/places/dubai.jpeg" alt="">
             </div>
 
+        </div>
+    </section>
+
+    <section class="page4">
+        <div class="page4-text">
+            <p>
+                Do you have any question or problem regarding our service.
+                Fill the form below so that we will contact you
+            </p>
+        </div>
+
+        <div class="page4-form">
+            <form action="">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="comment">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="page5">
+        <div class="page5-text">
+            <p> 
+                Save time, save money!
+                Sign up and we'll send the best deals to you
+            </p>
+        </div>
+
+        <div class="page5-form">
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="page6">
+        <div class="page6-text1">
+            <h1>WHO WE ARE</h1>
+        </div>
+
+        <div class="page6-text2">
+            <p>Our Address</p>
+            <p>4214 Harron Drive, Baltimore, MaryLand</p>
+            <p>Zip Code</p>
+            <p>21202</p>
+            <p>Phone Number</p>
+            <p>443-530-6068</p>
+            <p>LOCATION</p>
         </div>
     </section>
 
