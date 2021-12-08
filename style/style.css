@@ -212,20 +212,39 @@ body {
 /* PAGE4 */
 
 .page4 {
-    height: 600px;
-    background-image: url("../assets/images/hotel1.png");
-    background-repeat: no-repeat;
+    height: 750px;
 }
 
-.page4-text > p {
-    color: white;
-    font-size: 24px;
+.page4-text {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4-text > h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+}
+
+.page4-images {
+    margin-top: 2rem;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page4-images > img {
+    width: 350px;
+    height: 270px;
 }
 
 /* PAGE5 */
+
 .page5 {
-    height: 400px;
-    background-color: rgb(0, 42, 102);
+    height: 600px;
+    background-image: url("../assets/images/hotel1.png");
+    background-repeat: no-repeat;
 }
 
 .page5-text > p {
@@ -235,5 +254,17 @@ body {
 
 /* PAGE6 */
 .page6 {
+    height: 400px;
+    background-color: rgb(0, 42, 102);
+}
+
+.page6-text > p {
+    color: white;
+    font-size: 24px;
+}
+
+/* Footer */
+
+.footer {
     height: 500px;
 }
