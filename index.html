@@ -2,39 +2,62 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <!-- Google Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <section class="page1">
-        <nav class="nav-bar">
-            <div class="links">
-                <ul class="ul-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#">Top Destinations</a></li>
-                    <li><a href="#">Most Populars</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>oursist</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#top_destinations">Top Destinations</a>
+            <a href="#most_populars">Most populars</a>
+            <a href="#contact">Contacts</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <a href="#signup"><i class="fas fa-user" id="login-btn"></i></a>
+            
+        </div>
+
+        <form action="#" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+
+    <section class="home" id="home">
+        <!-- Page Number 1 -->
     
             <div class="auth-buttons">
-                <button class="register" type="button">Sign Up</button>
-                <button class="signin" type="button">Sign in</button>
+                <a href="#signup" class="btn" type="button">Sign Up</a>
+                <button class="btn register"  type="button">Sign in</button>
             </div>
         </nav>
 
-        <div class="page1-parts">
-            <div class="page1-text">
+        <div class="home-parts">
+            <div class="home-text">
                 <h1 class="booking-text">Book your accommodation in advance</h1>
             </div>
 
-            <form action="" method="get" class="page1-form">
-                <input type="search" placeholder="Where are you going?" class="place">
-                <input type="date" placeholder="arrive in -- leave in" class="date">
-                <button type="submit" class="search">Search</button>
+            <form class="home-form">
+                <input type="search" placeholder="Where are you going?" class="place" id="place">
+                <input type="date" placeholder="arrive in -- leave in" class="date" id="date">
+                <button type="submit" class="btn search" id="btn_search">Search</button>
             </form>
         </div>
 
@@ -43,18 +66,18 @@
         </div>
     </section>
 
-    <section class="page2">
-        <div class="page2-text">
+    <section class="hotels" id="hotels">
+        <div class="hotels-text">
             <h1 class="feel">FEEL LIKE HOME</h1>
         </div>
 
-        <div class="page2-images">
+        <div class="hotels-images">
             <img src="assets/images/popular2.jpg" alt="" class="popular2">
             <img src="assets/images/popular3.jpeg" alt="" class="popular3">
             <img src="assets/images/popular4.jpg" alt="" class="popular4">
         </div>
 
-        <div class="page2-images-text">
+        <div class="hotels-images-text">
             <p>Taj Dubai - Dubai, UAE</p>
             <p>The Modern Honolulu - Hawaii, USA</p>
             <p>Dusit Thani - Abu Dhabi, UAE</p>
@@ -62,30 +85,30 @@
 
     </section>
 
-    <section class="page3">
-        <div class="page3-text">
+    <section class="top_destinations" id="top_destinations">
+        <div class="top_destinations-text">
             <h1 class="feel">Travel all around the world</h1>
         </div>
 
-        <div class="page3-images1">
+        <div class="top_destinations-images1">
             <img src="assets/images/places/bali.jpg" alt="">
             <img src="assets/images/places/sydney.jpg" alt="">
             <img src="assets/images/places/antalya.jpg" alt="">
         </div>
 
-        <div class="page3-images1-text">
+        <div class="top_destinations-images1-text">
             <h3>Bali, Indonesia</h3>
             <h3>Sydney, Australia</h3>
             <h3>Antalya, Turkey</h3>
         </div>
 
-        <div class="page3-images2">
+        <div class="top_destinations-images2">
             <img src="assets/images/places/new_york.jpg" alt="">
             <img src="assets/images/places/maldives.jpg" alt="">
             <img src="assets/images/places/dubai.jpeg" alt="">
         </div>
 
-        <div class="page3-images2-text">
+        <div class="top_destinations-images2-text">
             <h3>New York, USA</h3>
             <h3>Maldives, Republic of Maldives</h3>
             <h3>Dubai, UAE</h3>
@@ -93,47 +116,113 @@
 
     </section>
 
-    <section class="page4">
-        <div class="page4-text">
+    <section class="most_populars" id="most_populars">
+        <div class="most_populars-text">
             <h1>The most popular hotels ranked so far</h1>
         </div>
 
-        <div class="page4-images">
-            <img src="assets/images/hotels/mardan-palace.jpg" alt="">
-            <img src="assets/images/hotels/burj-al-arab.jpg" alt="">
-            <img src="assets/images/hotels/atlantis-bahamas.jpg" alt="">
-            <img src="assets/images/hotels/plaza.jpg" alt="">
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="assets/images/hotels/mardan-palace.jpg" alt="">
+                <div class="hotel-info">
+                    <h2>Mardan Palace</h2>
+                    <p class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                </div>
+                <p class="txt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ducimus consectetur delectus eum molestias saepe,
+                    a repudiandae. Reiciendis doloribus corrupti optio quis blanditiis quidem ex! Molestiae quos amet sed commodi!
+                </p>
+            </div>
+            <div class="box">
+                <img src="assets/images/hotels/atlantis-bahamas.jpg" alt="">
+                <div class="hotel-info">
+                    <h2>Atlantis Bahamas</h2>
+                    <p class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </p>
+                </div>
+                <p class="txt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ducimus consectetur delectus eum molestias saepe,
+                    a repudiandae. Reiciendis doloribus corrupti optio quis blanditiis quidem ex! Molestiae quos amet sed commodi!
+                </p>
+            </div>
+            <div class="box">
+                <img src="assets/images/hotels/burj-al-arab.jpg" alt="">
+                <div class="hotel-info">
+                    <h2>Burj Al Arab</h2>
+                    <p class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                </div>
+                <p class="txt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ducimus consectetur delectus eum molestias saepe,
+                    a repudiandae. Reiciendis doloribus corrupti optio quis blanditiis quidem ex! Molestiae quos amet sed commodi!
+                </p>
+            </div>
+            <div class="box">
+                <img src="assets/images/hotels/plaza.jpg" alt="">
+                <div class="hotel-info">
+                    <h2>Plaza Hotel</h2>
+                    <p class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                </div>
+                <p class="txt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ducimus consectetur delectus eum molestias saepe,
+                    a repudiandae. Reiciendis doloribus corrupti optio quis blanditiis quidem ex! Molestiae quos amet sed commodi!
+                </p>
+            </div>
+           
         </div>
     </section>
 
-    <section class="page5">
-        <div class="page5-text">
+    <section class="contact" id="contact">
+        <div class="contact-text">
             <h1>Fill the form below to contact with us</h1>
         </div>
 
-        <div class="page5-form">
-            <form action="">
-                <input type="email" placeholder="Email" class="page5-email">
-                <input type="text" placeholder="comment" class="page5-comment">
-                <button type="submit" class="page5-send">Send</button>
+        <div class="contact-form">
+            <form action="#">
+                <input type="email" placeholder="Email" class="contact-email" id="form_email">
+                <textarea class="contact-comment" id="form_comment" cols="30" rows="10" placeholder="comment"></textarea>
+                <button type="submit" class="contact-send" id="send">Send</button>
             </form>
         </div>
     </section>
 
-    <section class="page6">
-        <div class="page6-text">
+    <section class="signup" id="signup">
+        <div class="signup-text">
             <h1> 
                 Save time, save money!
                 Sign up and we'll send the best deals to you
             </h1>
         </div>
 
-        <div class="page6-form">
-            <form action="">
-                <input type="text" placeholder="First Name" class="page6-firstname">
-                <input type="text" placeholder="Last Name" class="page6-lastname">
-                <input type="email" placeholder="Email" class="page6-email">
-                <button type="submit" class="page6-signup">Sign Up</button>
+        <div class="signup-form">
+            <form action="#">
+                <input type="text" placeholder="First Name" class="signup-firstname" id="first_name">
+                <input type="text" placeholder="Last Name" class="signup-lastname" id="last_name">
+                <input type="email" placeholder="Email" class="signup-email">
+                <button type="submit" class="signup-page-signup" id="signup">Sign Up</button>
             </form>
         </div>
     </section>
@@ -150,9 +239,13 @@
             <p>21202</p>
             <p>Phone Number</p>
             <p>443-530-6068</p>
-            <p>LOCATION</p>
+        </div>
+        <div class="footer-text3">
+            <p>All rights reserved!</p>
         </div>
     </section>
 
+    <!-- JS link -->
+    <script src="js/main.js"></script>
 </body>
 </html>
